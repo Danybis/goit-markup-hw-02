@@ -22,7 +22,7 @@ body {
     background-color: var(--main-white-color);
     color: var(--primary-color);
     letter-spacing: 0.03em;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .content {
@@ -159,7 +159,7 @@ body {
     font-family: var(--primary-font);
     font-weight: var(--bolder-font);
     font-size: var(--primary-font-size);
-    line-height: 1.88px;
+    line-height: 1.88;
     cursor: pointer;
     width: 200px;
     height: 50px;
@@ -168,7 +168,10 @@ body {
 }
 
 .slider-btn:hover {
-    transform: scale(1.05);
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    /* transform: scale(1.05); */
 }
 
 /* end slider */
@@ -235,9 +238,9 @@ body {
 /* end todo */
 
 /* team */
-.team {
-    background-color: #F5F4FA;
-}
+/* .team {
+    background-color: ;
+} */
 
 .team-head {
     font-family: var(--primary-font);
@@ -247,6 +250,7 @@ body {
     text-align: center;
     /* letter-spacing: 0.03em; */
     color: var(--primary-color);
+    background-color: var(--main-white-color);
 }
 
 .team-list {
@@ -351,6 +355,7 @@ body {
     display: block;
     width: 145px;
     cursor: pointer;
+    border: 0;
     border-radius: 4px;
     padding: 6px 22px;
     text-align: center;
@@ -407,7 +412,7 @@ body {
     color: var(--primary-color);
     font-weight: var(--bold-font);
     font-size: 18px;
-    line-height: 2x;
+    line-height: 2;
     letter-spacing: 0.06em;
     text-decoration: none;
 }
