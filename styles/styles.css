@@ -4,6 +4,10 @@
     --secondary-color: #757575;
     --accent-color: #2196F3;
     --main-white-color: #FFFFFF;
+    --main-black-color: #2F303A;
+    --border-color: #ECECEC;
+    --btn-hover-color: #188CE8;
+    --btn-white-color: #F5F4FA;
     /* font */
     --primary-font: "Roboto", sans-serif;
     --secondary-font: "Raleway", sans-serif;
@@ -22,7 +26,7 @@ body {
     background-color: var(--main-white-color);
     color: var(--primary-color);
     letter-spacing: 0.03em;
-    /* text-decoration: none; */
+    
 }
 
 .content {
@@ -37,15 +41,10 @@ body {
 }
 
 /* .section {
-    border-image: ;
-} */
+    } */
 
 /* .section-title {
-    font-weight: ;
-    font-size: ;
-    line-height: ;
-    color: ;
-} */
+    } */
 
 
 /* header */
@@ -56,6 +55,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid var(--border-color);
 }
 
 .logo {
@@ -106,7 +106,9 @@ body {
 }
 
 .menu-link-contact:hover,
-.menu-link-contact:focus {
+.menu-link-contact:focus,
+.menu-link:hover,
+.menu-link:focus {
     color: var(--accent-color);
 }
 
@@ -128,17 +130,13 @@ body {
     margin: 50px;
 }
 
-.menu-link:hover,
-.menu-link:focus {
-    color: var(--accent-color);
-}
 
 /* end header */
 
 /* slider */
 
 .slider {
-    background-color: #2F303A;
+    background-color: var(--main-black-color);
     padding: 200px 280px;
     text-align: center;
     letter-spacing: 0.06em;
@@ -168,7 +166,7 @@ body {
 }
 
 .slider-btn:hover {
-    background: #188CE8;
+    background: var(--btn-hover-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     /* transform: scale(1.05); */
@@ -293,7 +291,7 @@ body {
 /* footer */
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--main-black-color);
     padding: 60px 0px 60px 0px;
 }
 
@@ -350,7 +348,7 @@ body {
 }
 
 .portfolio-btn-link {
-    background-color: #F5F4FA;
+    background-color: var(--btn-white-color);
     color: var(--primary-color);
     display: block;
     width: 145px;
@@ -370,6 +368,7 @@ body {
 .portfolio-btn-link:focus {
     background-color: var(--accent-color);
     color: var(--main-white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*end portfolio-btn */
